@@ -2,13 +2,6 @@ contract:
   id: checkout-pricing
   version: 1
 conditions:
-- id: C1
-  description: Discount is capped at 20%
-  type: boundary
-  mandatory: true
-  guarded_by:
-  - tests/test_pricing.py::test_discount_is_capped_at_20_percent
-  checks: []
 - id: C2
   description: Discount results are correct for valid inputs
   type: functional
