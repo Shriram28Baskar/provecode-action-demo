@@ -1,6 +1,6 @@
 # provecode-action-demo
 
-A test fixture for the [PROVECODE](https://github.com/Shriram28Baskar/provecode) GitHub Action (`v0.2.0`), set up exactly as its README tells a new user to: `.github/workflows/provecode.yml`, with no contract.
+A test fixture for the [PROVECODE](https://github.com/Shriram28Baskar/provecode) GitHub Action (`v0.2.1`), set up exactly as its README tells a new user to: `.github/workflows/provecode.yml`, with no contract.
 
 The repository's own tests (`tests.yml`) pass on both pull requests below. PROVECODE should fail only the PR that weakens a test.
 

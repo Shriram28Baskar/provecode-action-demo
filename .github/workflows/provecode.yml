@@ -9,4 +9,4 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - uses: Shriram28Baskar/provecode@v0.2.0
+      - uses: Shriram28Baskar/provecode@v0.2.1
