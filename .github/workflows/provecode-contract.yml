@@ -1,0 +1,15 @@
+# Contract mode, from the PROVECODE README ("Use it on pull requests"). The contract is read from the
+# PR's base commit, so a PR cannot edit the requirements that judge it.
+on: pull_request
+permissions:
+  contents: read
+jobs:
+  provecode-contract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: Shriram28Baskar/provecode@v0.2.1
+        with:
+          contract: contracts/checkout.yaml

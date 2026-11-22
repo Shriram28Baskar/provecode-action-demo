@@ -1,0 +1,30 @@
+contract:
+  id: checkout-pricing
+  version: 1
+conditions:
+- id: C1
+  description: Discount is capped at 20%
+  type: boundary
+  mandatory: true
+  guarded_by:
+  - tests/test_pricing.py::test_discount_is_capped_at_20_percent
+  checks: []
+- id: C2
+  description: Discount results are correct for valid inputs
+  type: functional
+  mandatory: true
+  guarded_by:
+  - tests/test_pricing.py::test_small_discount_is_applied
+  checks: []
+- id: C3
+  description: Invalid inputs raise ValueError
+  type: functional
+  mandatory: true
+  guarded_by:
+  - tests/test_pricing.py::test_negative_input_is_rejected
+  checks: []
+checks: []
+approval:
+  approved_by: Shriram28Baskar
+  approved_at: '2026-11-22T16:55:40Z'
+  content_hash: sha256:004f01974d760830723d74ec3704398a246be43677ad662d954b43eb1eda8af7
